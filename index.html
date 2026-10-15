@@ -86,6 +86,7 @@
     header > div > div:last-of-type > a[download] svg { width:1.1rem;height:1.1rem; }
     header > div > nav a:hover { color:#fbbf24; }
     header > div > nav a::after { content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:#f59e0b;transition:right .25s ease; }
+    header > div > nav a:hover::after, header > div > nav a:focus-visible::after { right:0; }
     @media (min-width:768px) and (max-width:1100px) { header > div > nav { display:none!important; } #mobileMenuBtn { display:inline-flex; } }
     @media (min-width:901px) and (max-width:1150px) { header > div > div:last-of-type > a[download] { display:none!important; } }
     #mobileMenuBtn { display:none; }
@@ -121,7 +122,7 @@
     #hero .hero-copy > :nth-child(2) { animation:hero-enter .85s .24s both; }
     #hero .hero-copy > :nth-child(3) { animation:hero-enter .85s .4s both; }
     #hero .hero-copy > :nth-child(4) { animation:hero-enter .85s .56s both; }
-    #about { min-height:calc(100vh - 6rem);display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);align-content:start;align-items:center;gap:clamp(2.5rem,8vw,7rem);padding-block:1.5rem!important; }
+    #about { min-height:calc(100vh - 6rem);display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);align-content:center;align-items:center;gap:clamp(2.5rem,8vw,7rem);padding-block:1.5rem!important; }
     @supports (min-height:100svh) { #about { min-height:calc(100svh - 6rem); } }
     #about .about-art { position:relative;min-height:330px;max-width:390px;width:100%;margin-inline:auto; }
     .about-art-backdrop { position:absolute;left:10%;top:2%;width:68%;height:80%;border:1px solid rgba(255,255,255,.07);border-radius:1.1rem;background:linear-gradient(145deg,#1a1a1a,#101010); }
@@ -277,7 +278,7 @@
         </div>
         <div class="flex flex-col">
           <span class="font-bold tracking-tight text-slate-100 group-hover:text-amber-400 text-sm sm:text-base">
-            Sri Dev <span class="text-amber-400">S.</span>
+            Sri Dev <span class="text-amber-400">S</span>
           </span>
         </div>
       </a>
